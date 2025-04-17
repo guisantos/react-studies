@@ -1,0 +1,36 @@
+.tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.tab-button {
+    padding: 10px 16px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.tab-button.active {
+    border-bottom: 3px solid #007bff;
+    font-weight: bold;
+    color: #007bff
+}
+
+.tabs-content {
+    font-size: 16px;
+}
+
+.tab-button:hover {
+    color:#007bff;
+}

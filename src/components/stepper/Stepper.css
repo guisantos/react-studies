@@ -1,0 +1,72 @@
+.stepper-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.stepper-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    text-align: center; 
+}
+
+.step-number {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.step.active .step-number {
+    background-color: #007bff;
+}
+
+.step.completed .step-number {
+    background-color: #28a745;
+}
+
+.step-label {
+    font-size: 14px;
+}
+
+.stepper-content {
+    min-height: 120px;
+}
+
+.stepper-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stepper-controls button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.stepper-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
